@@ -1,0 +1,136 @@
+body {
+    background-color: #181F32;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Play', sans-serif;
+}
+
+#wrapper {
+    width: 540px;
+    height: 580px;
+    background-color: black;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#console {
+    width: 500px;
+    height: 60px;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info {
+    min-width: 100px;
+    height: 30px;
+    background-color: #181F32;
+    background: linear-gradient(#3a4b78, #181F32);
+    text-align: center;
+    border-radius: 10px;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board {
+    width: 500px;
+    height: 500px;
+    background-color: black;
+    background-image: url("img/galaxy.jpg");
+/*    source: https://pixabay.com/static/uploads/photo/2016/06/05/07/59/stars-1436950_960_720.jpg*/
+    background-size: cover;
+    position: relative;
+}
+
+.ball {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: white;
+    background-image: url("img/star.jpg");
+/*    source: https://pixabay.com/static/uploads/photo/2016/07/20/19/42/wallpaper-1531107_960_720.jpg*/
+    background-size: 55px;
+    background-position: center;
+    position: absolute;
+}
+
+#paddle {
+    width: 90px;
+    height: 30px;
+    background-image: url("img/paddle.png");
+/*    source: http://www.spriters-resource.com/mobile/arkanoidios/sheet/65938/*/
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.ship {
+    min-width: 70px;
+    height: 40px;
+    background-image: url("img/ufo-blue.png");
+/*    source: http://www.clker.com/cliparts/N/2/V/S/q/F/ufo-straight-md.png*/
+    background-position: center;
+    background-size: 70px;
+    background-repeat: no-repeat;
+    margin-top: 5px;
+    margin-left: 25px;
+    position: relative;
+    display: inline-block;
+}
+
+.shipStrong {
+    min-width: 70px;
+    height: 40px;
+    background-image: url("img/ufo-purple.png"); 
+/*    source: https://pixabay.com/static/uploads/photo/2014/04/03/00/42/spaceship-309153_960_720.png*/
+    background-position: center;
+    background-size: 70px;
+    background-repeat: no-repeat;
+    margin-top: 5px;
+    margin-left: 25px;
+    position: relative;
+    display: inline-block;
+}
+
+.weak {
+    opacity: 0.5;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.message {
+    width: 400px;
+    height: 400px;
+    padding: 50px;
+    background-image: url("img/galaxy.jpg");
+    background-size: cover;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.startButton {
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    font-family: 'Play', sans-serif;
+    font-weight: 700;
+}
+
+.startButton:hover {
+    background-color:azure;
+}
